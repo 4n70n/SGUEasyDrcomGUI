@@ -9,6 +9,7 @@ Mac OS 版 SGUEasyDrcom-MacOS（以下简称**本项目**）使用 XCode 8.1 开
 ## Thanks
 本项目以Shindo创作的EasyDrcom修改重构得来，在此特别感谢Shindo的付出。
 [原版代码在此](https://github.com/coverxit/EasyDrcomGUI)
+
 **另外特别感谢Kit Tse的指导修改**
 
 ##另外特别引用Kit Tse的一段话
