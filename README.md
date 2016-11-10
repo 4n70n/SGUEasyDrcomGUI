@@ -6,6 +6,13 @@ Mac OS 版 SGUEasyDrcom-MacOS（以下简称**本项目**）使用 XCode 8.1 开
 
 本项目依赖于 **libpcap**（已内建于Mac OS X），此外使用了第三方库 [STPrivilegedTask](https://github.com/sveinbjornt/STPrivilegedTask)。
 
+##Important
+##注意事项
+在MacOS 10.12(或以上)运行本程序时会提示无法连接，日志中显示*You don't have permission to capture on that device ((cannot open BPF device) /dev/bpf0: Permission denied)*，请打开终端(terminal.app)，输入以下命令
+> sudo chmod 777 /dev/bpf*
+
+如此一来再运行就正常了
+
 ## Thanks
 本项目以Shindo创作的EasyDrcom修改重构得来，在此特别感谢Shindo的付出。
 [原版代码在此](https://github.com/coverxit/EasyDrcomGUI)
