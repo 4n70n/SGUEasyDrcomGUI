@@ -8,8 +8,9 @@ Mac OS 版 SGUEasyDrcom-MacOS（以下简称**本项目**）使用 XCode 8.1 开
 
 ##Important
 ##注意事项
-在MacOS 10.12(或以上)运行本程序时会提示无法连接，日志中显示*You don't have permission to capture on that device ((cannot open BPF device) /dev/bpf0: Permission denied)*，请打开终端(terminal.app)，输入以下命令
-> sudo chmod 777 /dev/bpf*
+Mac OS X 10.11 El Capitan和macOS 10.12 Sierra默认开启了SIP（System Integrity Protection），这会导致EasyDrcomGUI无法正常使用。如果您正在使用上述两个版本的系统，并且无法正常使用EasyDrcomGUI，请在禁用SIP后，在终端中输入下述命令以修复权限：
+
+>sudo chmod 666 /dev/bpf*
 
 如此一来再运行就正常了
 
